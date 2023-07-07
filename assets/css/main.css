@@ -146,7 +146,7 @@ nav {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.send-form button {
+.btn-primary {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.9);
 
@@ -158,7 +158,7 @@ nav {
     align-items: center;
 }
 
-.form-text {
+.btn-content {
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 100;
@@ -169,7 +169,7 @@ nav {
 
 }
 
-.form-text::after {
+.btn-content::after {
     position: absolute;
     content: "";
     width: 1px;
@@ -181,7 +181,7 @@ nav {
     transition: 0.3s ease-out;
 }
 
-.form-text::before {
+.btn-content::before {
     position: absolute;
     content: "";
     width: 10px;
@@ -193,7 +193,7 @@ nav {
     transition: 0.3s ease-out;
 }
 
-.send-form>button:hover>.form-text::after {
+.send-form>button:hover>.btn-content::after {
     position: absolute;
     content: "";
     width: 5px;
@@ -207,7 +207,7 @@ nav {
 
 }
 
-.send-form>button:hover>.form-text::before {
+.send-form>button:hover>.btn-content::before {
     position: absolute;
     content: "";
     width: 5px;
@@ -348,6 +348,18 @@ nav {
     .content-box {
         margin-top: 100px;
     }
+
+    .content-capacity {
+        margin-top: 0;
+    }
+
+    .content-cost {
+        margin-top: 0;
+    }
+
+    .content-contact {
+        margin-top: 0;
+    }
 }
 
 .content-box {
@@ -361,12 +373,15 @@ nav {
 
 .content-capacity {
     font-size: 2.7rem;
-    padding: 40px 0;
+    margin-top: 400px;
+    padding: 10px 0;
 }
 
 .content-cost {
     font-size: 2rem;
     padding: 10px 0;
+    margin-top: 400px;
+    transition: 0.4s ease;
 }
 
 .slide-box .content-cost span {
@@ -374,8 +389,10 @@ nav {
     font-size: 2.5rem;
 }
 
-.slide-box .content-contact {
+.content-contact {
     font-size: 1.8rem;
     font-weight: 200;
+    margin-top: 400px;
     padding: 10px 0;
+    transition: 0.5s ease;
 }
